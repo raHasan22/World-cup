@@ -179,7 +179,7 @@ body{
         grid-template-columns: repeat(1, 1fr);
     }
     .footer-menu{
-        padding: 1em 6em;
+        padding: 1em 4em;
     }
     .menu-elements{
         margin-bottom: 1em;
