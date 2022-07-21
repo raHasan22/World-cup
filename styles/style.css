@@ -1,0 +1,229 @@
+/* full body */
+body{
+    margin: 0;
+}
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* header design */
+.banner{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #161616;
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 2% 2% 0%;
+    font-size: 1.5em;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+.half-banner-one{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3% 3% 4%;
+    margin: 0;
+}
+.half-banner-two{
+    width: 50%;
+    padding: 3% 3% 0%;
+    margin: 0;
+}
+.banner a{
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rgb(199, 0, 0);
+    padding: .5em .8em;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+/* main design */
+.content{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Poppins', sans-serif;
+    padding: 0%;
+}
+.buttons{
+    background-color: #161616;
+    border-radius: 10px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 22px 20px;
+    text-align: center;
+    align-content: center;
+    margin-right: 10px;
+    
+}
+
+.button-one{
+    background-color: aliceblue;
+    border-radius: 7px;
+    padding: 14px 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.button-one:hover{
+    background-color: rgba(255, 0, 0, 0.616);
+    cursor: pointer;
+}
+.button-one a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 77%;
+    font-size: 1em;
+}
+.article-box{
+    box-shadow: 5px 15px 25px #888888;
+    border-radius: 9px;
+}
+.article-banner img{
+    width: 100%;
+    height: 100%;
+}
+.views{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 6% 2%;
+}
+.views img{
+    height: 1.1em;
+    width: 1.1em;
+}
+.article-info{
+    padding: 2% 6% 0% ;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.article-info button{
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 30%;
+}
+/* footer design */
+
+.footer{
+    margin: 0;
+    margin-top: 5em;
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 6em 5em;
+
+}
+.footer h1{
+    margin-bottom: 1em;
+}
+.footer hr{
+    margin-bottom: 1em;
+}
+.footer-menu{
+    color: rgb(184, 184, 184);
+    display: flex;
+    padding: 0em 9em;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    font-weight: 200;
+    margin-bottom: 2em;
+}
+.footer-menu:hover{
+    cursor: pointer;
+}
+/* media queries mobile */
+@media only screen and (max-width:688px){
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+    }
+    .view-all{
+        display: none;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons{
+        background-color: white;
+    }
+    .articles{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-menu{
+        padding: 1em 6em;
+    }
+    .menu-elements{
+        margin-bottom: 1em;
+    }
+}
+/* media query tablet */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .banner{
+        font-size: .8em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons{
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        width: 75%;
+    }
+    .articles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-menu{
+        padding: 1em 6em;
+    }
+    .menu-elements{
+        margin-bottom: 1em;
+        padding: .2em .4em;
+    }
+    .view-all{
+        margin: 5em;
+        color: white;
+        background-color: tomato;
+        padding: .8em 1em;
+        border-radius: 5px;
+    }
+    .view-all:hover{
+        cursor: pointer;
+    }
+}
+/* media query for pc */
+@media only screen and (min-width:992px){
+    .view-all{
+        display: none;
+    }
+}
